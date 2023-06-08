@@ -1,0 +1,97 @@
+@use '@carbon/colors';
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/breakpoint' as *;
+
+.login-background {
+  height: calc(100vh - 3rem);
+  width: 100vw;
+  background: url("loginPageImage.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  overflow: scroll;
+}
+
+.content-div {
+  @include breakpoint(md) {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+  }
+  @include breakpoint(sm) {
+    background-color: colors.$gray-100;
+    height: calc(100vh - 3rem);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.header-padding {
+    padding-top: $spacing-07;
+    padding-right: $spacing-06;
+    padding-left: $spacing-06;
+}
+
+.email-input {
+  padding-top: $spacing-08;
+  padding-right: $spacing-06;
+  padding-left: $spacing-06;
+}
+
+.continue-button {
+  margin-top: $spacing-06;
+  @include breakpoint(md) {
+    margin-left: 50%;
+    width: 50%;
+  }
+  @include breakpoint(sm) {
+    margin-left: 50%;
+    width: calc(50% - $spacing-06);
+  }
+}
+
+.log-in-message {
+  padding-left: $spacing-06;
+}
+
+.function-text {
+  all: unset;
+  color: colors.$blue-50;
+}
+
+.function-text:hover {
+  all: unset;
+  text-decoration: underline;
+  color: colors.$blue-50;
+}
+
+.password-input {
+  padding-top: $spacing-07;
+  padding-right: $spacing-06;
+  padding-left: $spacing-06;
+}
+
+.resend-button {
+  margin-top: $spacing-06;
+  @include breakpoint(md) {
+    margin-left: 0;
+    width: 50%;
+  }
+  @include breakpoint(sm) {
+    margin-left: $spacing-06;
+    width: calc(50% - $spacing-06);
+  }
+}
+
+.log-in-button {
+  margin-top: $spacing-06;
+  @include breakpoint(md) {
+    margin-right: 0;
+    width: 50%;
+  }
+  @include breakpoint(sm) {
+    margin-right: $spacing-06;
+    width: calc(50% - $spacing-06);
+  }
+}

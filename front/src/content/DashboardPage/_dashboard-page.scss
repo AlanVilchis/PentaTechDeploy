@@ -1,0 +1,122 @@
+@use '@carbon/colors';
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/theme' as *;
+@use '@carbon/react/scss/breakpoint' as *;
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+}
+
+.expandable-search {
+  width: inherit;
+}
+
+.background {
+  background-color: colors.$gray-90;
+  height: calc(100vh - 3rem);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  @include breakpoint(md) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @include breakpoint(sm) {
+    padding: 4px;
+  }
+}
+
+.greeting {
+  border: 2px solid colors.$gray-90;
+  background-color: colors.$gray-100;
+  padding: $spacing-06;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.greeting-hello {
+  font-weight: normal;
+  @include breakpoint(md) {
+    font-size: 40px;
+  }
+  @include breakpoint(sm) {
+    font-size: 35px;
+  }
+}
+
+
+.greeting-user  {
+  color: colors.$magenta-70;
+  font-weight: normal;
+  @include breakpoint(md) {
+    font-size: 40px;
+  }
+  @include breakpoint(sm) {
+    font-size: 35px;
+  }
+}
+
+.summary {
+  color: colors.$teal-60;
+  font-weight: normal;
+  @include breakpoint(md) {
+    font-size: 40px;
+  }
+  @include breakpoint(sm) {
+    font-size: 35px;
+  }
+}
+
+.grid-column {
+  border: 2px solid colors.$gray-90;
+  background-color: colors.$gray-100;
+  padding: $spacing-06;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-graph {
+  border: 2px solid colors.$gray-90;
+  background-color: colors.$gray-100;
+  padding-right: $spacing-08;
+  padding-bottom: $spacing-06;
+  padding-left: $spacing-08;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.loading {
+  margin-top: $spacing-06;
+}
+
+.certifications-header {
+  margin-bottom: $spacing-05;
+  text-align: center;
+}
+
+.recommendations-header {
+  margin-top: $spacing-07;
+  margin-bottom: $spacing-05;
+  text-align: center;
+}
+
+.upload-message {
+  padding-top: $spacing-04;
+  text-align: center;
+}
+
+.padding {
+  margin-bottom: $spacing-04;
+}
